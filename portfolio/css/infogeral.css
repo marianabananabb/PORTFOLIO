@@ -1,0 +1,119 @@
+
+  @font-face {
+    font-family: 'wildworld';
+    src: url('../fonts/wildworld.otf') format('opentype');
+    font-weight: normal;
+     }
+ 
+     @font-face {
+      font-family: 'Merriweather';
+      src: url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet') format('opentype');
+      font-weight: normal;
+       }
+
+  
+
+  h1{
+      font-family:'wildworld', sans-serif;
+      font-size: 13.8vw; 
+           margin:  auto;
+      text-align: center;
+      z-index: 1;
+      
+      
+  }
+
+.flex{
+  display: flex;
+  top: 50px;
+}
+
+.flexprimeiro{
+  flex-direction: row;
+  width: 60%;
+}
+  svg{
+
+    width  : 90vw;  
+    height : 140px;
+    z-index: 1000;
+  
+  }
+  
+  text{
+    fill            : none;
+    stroke          : black;
+    stroke-width    : 1px;
+    stroke-linejoin : round;
+    font-family:'wildworld', sans-serif;
+    font-size: 10vw;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .invert{
+    width: 38%;
+    margin-top: -50px;
+
+ 
+  }
+
+  
+  img{
+    width: 100%;
+
+  }
+
+  
+
+.texto{
+  font-family:'Merriweather', serif;
+  font-size: 24px;
+  margin: 0;
+  padding-right: 16px;
+  
+}
+
+
+.invert:hover {
+  -webkit-filter: invert(.9);
+  filter: invert(.9);
+}
+
+@media screen and (max-width: 992px) {
+  html{
+    overflow-x: hidden;
+
+  }
+  body {
+    background-color: blue;
+  }
+  .flex{
+    flex-direction: column-reverse;
+  }
+  .invert{
+    width: 50%;
+    align-self: center;
+  }
+  .flexprimeiro{
+    align-self: center;
+
+  }
+  .texto{
+    text-align: center;
+  }
+  .svg{
+    width: 76vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  html{
+    overflow-x: hidden;
+
+  }
+  body {
+    background-color: blue;
+  }
+}
